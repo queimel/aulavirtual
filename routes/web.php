@@ -22,7 +22,7 @@ Auth::routes();
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin','middleware' => ['auth']], function () {
     Route::get('/', 'AdminController@index')->name('dashboard');
-    // Route::get('usuarios', 'UserController@index')->name('admin.usuarios');
 
     Route::resource('usuarios', 'UsersController', ['as' => 'admin']);
+    Route::resource('ramos', 'RamosController', ['as' => 'admin']);
 });

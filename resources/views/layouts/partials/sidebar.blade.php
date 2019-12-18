@@ -7,7 +7,7 @@
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
-                        <li class="user-profile"> 
+                        <li class="user-profile">
                         <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
                         <img src="{{ asset('images/users/profile.png') }}" alt="user" />
                         <span class="hide-menu">
@@ -32,22 +32,22 @@
                                 <li>
                                     <a href="{{ route('admin.usuarios.index')}}">Listado Usuarios </a>
                                 </li>
-                                <li><a href="#">Ingresar Usuario</a></li>
+                                <li><a href="{{ route('admin.usuarios.create')}}">Ingresar Usuario</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Clientes</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Niveles</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="app-calendar.html">Listado clientes</a></li>
-                                <li><a href="app-chat.html">Nuevo Cliente</a></li>
+                                <li><a href="app-calendar.html">Listado Niveles</a></li>
+                                <li><a href="app-chat.html">Nuevo Nivel</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Repuestos</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Ramos</span></a>
                             <ul aria-expanded="false" class="collapse">
-                            <li><a href="app-calendar.html">Listado Repuestos</a></li>
-                                <li><a href="app-chat.html">Nuevo Repuesto</a></li>
+                            <li><a href="app-calendar.html">Listado Ramos</a></li>
+                                <li><a href="app-chat.html">Nuevo Ramo</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-engine"></i><span class="hide-menu">Mantenciones</span></a>
+                        <!-- <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-engine"></i><span class="hide-menu">Mantenciones</span></a>
                             <ul aria-expanded="false" class="collapse">
                             <li><a href="app-calendar.html">Listado mantenciones</a></li>
                                 <li><a href="app-chat.html">Nueva mantencion</a></li>
@@ -58,7 +58,7 @@
                             <li><a href="app-calendar.html">Listado Tecnicos</a></li>
                                 <li><a href="app-chat.html">Nueva Tecnico</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
                     </ul>
                 </nav>

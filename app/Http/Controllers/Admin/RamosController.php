@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\admin;
-use App\User;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class UsersController extends Controller
+class RamosController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,10 +14,7 @@ class UsersController extends Controller
      */
     public function index()
     {
-        $usuarios = User::all();
-
-        // cuando llegue a la url /usuarios, retorna la vista correspondiente
-        return view('admin.users.index', compact('usuarios'));
+        //
     }
 
     /**
@@ -29,7 +25,6 @@ class UsersController extends Controller
     public function create()
     {
         //
-        return view('admin.users.create');
     }
 
     /**
@@ -63,7 +58,6 @@ class UsersController extends Controller
     public function edit($id)
     {
         //
-        return view('admin.users.edit');
     }
 
     /**
