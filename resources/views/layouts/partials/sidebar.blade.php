@@ -37,14 +37,12 @@
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Niveles</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="app-calendar.html">Listado Niveles</a></li>
-                                <li><a href="app-chat.html">Nuevo Nivel</a></li>
+                                <li><a href="{{ route('admin.niveles.index')}}">Listado Niveles</a></li>
                             </ul>
                         </li>
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Ramos</span></a>
                             <ul aria-expanded="false" class="collapse">
-                            <li><a href="app-calendar.html">Listado Ramos</a></li>
-                                <li><a href="app-chat.html">Nuevo Ramo</a></li>
+                            <li><a href="{{ route('admin.ramos.index')}}">Listado Ramos</a></li>
                             </ul>
                         </li>
                         <!-- <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-engine"></i><span class="hide-menu">Mantenciones</span></a>

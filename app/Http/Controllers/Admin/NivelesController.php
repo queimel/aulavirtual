@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class RamosController extends Controller
+class NivelesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class RamosController extends Controller
      */
     public function index()
     {
-        //
-        return view('admin.ramos.index');
+        return view('admin.niveles.index');
     }
 
     /**
