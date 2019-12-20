@@ -9,10 +9,13 @@
                     <ul id="sidebarnav">
                         <li class="user-profile">
                         <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                        <img src="{{ asset('images/users/profile.png') }}" alt="user" />
+                        <img src="{{ asset('images/avatar.png') }}" alt="user" />
                         <span class="hide-menu">
                         @hasrole('Admin')
                             Admin
+                        @endhasrole
+                        @hasrole('Profesor')
+                            Profesor
                         @endhasrole
 
                         </span></a>
@@ -45,6 +48,15 @@
                             </ul>
                         </li>
                         @endhasrole
+
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Mis Ramos </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                    <a href="{{ route('admin.ramosProfesor.index')}}">Listado Ramos </a>
+                                </li>
+                            </ul>
+                        </li>
+
                         <!-- <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-engine"></i><span class="hide-menu">Mantenciones</span></a>
                             <ul aria-expanded="false" class="collapse">
                             <li><a href="app-calendar.html">Listado mantenciones</a></li>

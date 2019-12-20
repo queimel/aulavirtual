@@ -23,6 +23,12 @@
 
                     </ul>
                 </div>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-info btn-block btn-sm mr-5">
+                        <i class="fa fa-power-off"></i> Logout
+                    </button>
+                </form>
             </nav>
         </header>
         <!-- ============================================================== -->

@@ -7,7 +7,7 @@
                 <h4 class="card-title">Niveles</h4>
                 <h6 class="card-subtitle">Listado de niveles registrados en el sistema</h6>
                 <div class="d-flex mb-3 justify-content-end">
-                    <button class="btn btn-info" data-toggle="modal" data-target="#modalNuevoNivel">
+                    <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalNuevoNivel">
                         <i class="fa fa-plus"></i>
                         Nuevo Nivel
                     </button>

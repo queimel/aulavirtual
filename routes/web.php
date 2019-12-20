@@ -25,4 +25,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin','middleware' => ['auth
     Route::resource('usuarios', 'UsersController', ['as' => 'admin']);
     Route::resource('niveles', 'NivelesController', ['as' => 'admin']);
     Route::resource('ramos', 'RamosController', ['as' => 'admin']);
+    Route::resource('ramosProfesor', 'RamosProfesorController', ['as' => 'admin']);
+
 });
