@@ -13,8 +13,6 @@
                         <span class="hide-menu">
                         @hasrole('Admin')
                             Admin
-                        @else
-                            I am not a writer...
                         @endhasrole
 
                         </span></a>
@@ -27,6 +25,7 @@
                             </ul> -->
                         </li>
                         <li class="nav-devider"></li>
+                        @hasrole('Admin')
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-account"></i><span class="hide-menu">Usuarios </span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li>
@@ -45,6 +44,7 @@
                             <li><a href="{{ route('admin.ramos.index')}}">Listado Ramos</a></li>
                             </ul>
                         </li>
+                        @endhasrole
                         <!-- <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-engine"></i><span class="hide-menu">Mantenciones</span></a>
                             <ul aria-expanded="false" class="collapse">
                             <li><a href="app-calendar.html">Listado mantenciones</a></li>

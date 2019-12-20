@@ -18,13 +18,15 @@
                             <tr>
                                 <th>Nombre</th>
                                 <th>Niveles</th>
+                                <th>Profesor</th>
                                 <th>.</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Historia</td>
-                                <td>1ro, 2do, 3ro, 4to, 5to </td>
+                                <td><span class="badge badge-secondary">1ro</span> <span class="badge badge-secondary">2do</span> <span class="badge badge-secondary">3ro</span> <span class="badge badge-secondary">4to</span> <span class="badge badge-secondary">5to</span> </td>
+                                <td>Juan Pablo Torrealba</td>
                                 <td>
                                      <a class="btn btn-secondary" data-toggle="modal" data-target="#modalEditarRamo">
                                         <i class="fa fa-pencil"></i>

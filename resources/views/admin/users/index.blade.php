@@ -7,13 +7,13 @@
                 <h4 class="card-title">Usuarios</h4>
                 <h6 class="card-subtitle">Listado usuarios registrados en el sistema</h6>
                 <div class="table-responsive m-t-40">
-                    <table id="usersTable" class="table table-bordered table-striped">
+                    <table class="table table-bordered table-striped">
                         <thead>
                             <tr>
                                 <th>Nombre</th>
                                 <th>Email</th>
                                 <th>Rol</th>
-                                <th>Acciones</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -61,11 +61,4 @@
 
 @push('scripts')
     <script src="{{ asset('js/plugins/jquery/jquery.min.js')}}"></script>
-    <script src="{{ asset('js/plugins/datatables/jquery.dataTables.min.js')}}" defer></script>
-    <script>
-        $(document).ready(function() {
-            $('#usersTable').DataTable();
-        });
-
-    </script>
 @endpush

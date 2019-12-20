@@ -16,6 +16,7 @@
                     <table id="usersTable" class="table table-bordered">
                         <thead>
                             <tr>
+                                <th></th>
                                 <th>Nombre</th>
                                 <th>Cantidad Secciones</th>
                                 <th>Cantidad Alumnos</th>
@@ -24,13 +25,15 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td>
+                                    <button class="btn btn-light btnCollapse" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1" >
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </td>
                                 <td>1ro Basico</td>
                                 <td>3</td>
                                 <td>45</td>
                                 <td>
-                                    <button class="btn btn-primary btnCollapse" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1" >
-                                        <i class="fa fa-info"></i>
-                                      </button>
                                      <a class="btn btn-secondary" data-toggle="modal" data-target="#modalEditarNivel">
                                         <i class="fa fa-pencil"></i>
                                     </a>
@@ -40,9 +43,9 @@
                                 </td>
                             </tr>
                             <tr class="collapse bg-light" id="collapse1">
-                                <td colspan="4">
+                                <td colspan="5">
                                     <div class="d-flex mb-3 justify-content-end">
-                                        <button class="btn btn-info" data-toggle="modal" data-target="#modalNuevaSeccion">
+                                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalNuevaSeccion">
                                             <i class="fa fa-plus"></i>
                                             Nueva Sección
                                         </button>
@@ -100,13 +103,14 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td>
+                                    <button class="btn btn-light btnCollapse" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        <i class="fa fa-plus"></i>
+                                    </button></td>
                                 <td>2do Basico</td>
                                 <td>3</td>
                                 <td>45</td>
                                 <td>
-                                    <button class="btn btn-primary btnCollapse" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                        <i class="fa fa-info"></i>
-                                      </button>
                                      <a class="btn btn-secondary" data-toggle="modal" data-target="#modalEditarNivel">
                                         <i class="fa fa-pencil"></i>
                                     </a>
@@ -116,10 +120,10 @@
                                 </td>
                             </tr>
                             <tr class="collapse bg-light" id="collapse2">
-                                <td colspan="4">
+                                <td colspan="5">
                                     <div class="d-flex mb-3 justify-content-end">
                                         <button class="btn btn-info" data-toggle="modal" data-target="#modalNuevaSeccion">
-                                            <i class="fa fa-plus"></i>
+                                            <i class="fa fa-plus btn-sm"></i>
                                             Nueva Sección
                                         </button>
                                     </div>
@@ -176,13 +180,15 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td>
+                                    <button class="btn btn-light btnCollapse" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        <i class="fa fa-plus"></i>
+                                    </button>
+                                </td>
                                 <td>3ro Basico</td>
                                 <td>3</td>
                                 <td>45</td>
                                 <td>
-                                    <button class="btn btn-primary btnCollapse" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                        <i class="fa fa-info"></i>
-                                      </button>
                                      <a class="btn btn-secondary" data-toggle="modal" data-target="#modalEditarNivel">
                                         <i class="fa fa-pencil"></i>
                                     </a>
@@ -192,9 +198,9 @@
                                 </td>
                             </tr>
                             <tr class="collapse bg-light" id="collapse3">
-                                <td colspan="4">
+                                <td colspan="5">
                                     <div class="d-flex mb-3 justify-content-end">
-                                        <button class="btn btn-info" data-toggle="modal" data-target="#modalNuevaSeccion">
+                                        <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalNuevaSeccion">
                                             <i class="fa fa-plus"></i>
                                             Nueva Sección
                                         </button>
@@ -408,13 +414,15 @@
 
 @push('scripts')
     <script src="{{ asset('js/plugins/jquery/jquery.min.js')}}"></script>
+    <!-- Footable -->
+    <script src="{{ asset('js/plugins/footable/js/footable.all.min.js')}}" defer></script>
     <script>
         $(document).ready(function(){
             $('.btnCollapse').click(function(){
                 if($(this).attr('aria-expanded') === 'false'){
-                    $(this).parent().parent().find('td').addClass('bg-warning');
+                    $(this).parent().parent().find('td').addClass('bg-active');
                 }else{
-                    $(this).parent().parent().find('td').removeClass('bg-warning');
+                    $(this).parent().parent().find('td').removeClass('bg-active');
 
                 }
 
