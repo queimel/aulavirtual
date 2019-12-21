@@ -56,7 +56,13 @@
                                 </li>
                             </ul>
                         </li>
-
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Evaluaciones </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                    <a href="{{ route('admin.evaluacionesProfesor.index')}}">Listado Evaluaciones </a>
+                                </li>
+                            </ul>
+                        </li>
                         <!-- <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-engine"></i><span class="hide-menu">Mantenciones</span></a>
                             <ul aria-expanded="false" class="collapse">
                             <li><a href="app-calendar.html">Listado mantenciones</a></li>
