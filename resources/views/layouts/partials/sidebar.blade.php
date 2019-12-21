@@ -29,7 +29,7 @@
                         </li>
                         <li class="nav-devider"></li>
                         @hasrole('Admin')
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-account"></i><span class="hide-menu">Usuarios </span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Usuarios </span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li>
                                     <a href="{{ route('admin.usuarios.index')}}">Listado Usuarios </a>
@@ -37,18 +37,18 @@
                                 <li><a href="{{ route('admin.usuarios.create')}}">Ingresar Usuario</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-account-multiple"></i><span class="hide-menu">Niveles</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Niveles</span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="{{ route('admin.niveles.index')}}">Listado Niveles</a></li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Ramos</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Ramos</span></a>
                             <ul aria-expanded="false" class="collapse">
                             <li><a href="{{ route('admin.ramos.index')}}">Listado Ramos</a></li>
                             </ul>
                         </li>
                         @endhasrole
-
+                        @hasrole('Profesor')
                         <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Mis Ramos </span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li>
@@ -63,6 +63,7 @@
                                 </li>
                             </ul>
                         </li>
+                        @endhasrole
                         <!-- <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-engine"></i><span class="hide-menu">Mantenciones</span></a>
                             <ul aria-expanded="false" class="collapse">
                             <li><a href="app-calendar.html">Listado mantenciones</a></li>
