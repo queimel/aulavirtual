@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class EvaluacionesController extends Controller
+class ForosProfesor extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class EvaluacionesController extends Controller
      */
     public function index()
     {
-        return view('profesor.evaluaciones.index');
+        return view('profesor.foros.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class EvaluacionesController extends Controller
      */
     public function create()
     {
-        return view('profesor.evaluaciones.create');
+        return view('profesor.foros.create');
     }
 
     /**
@@ -46,7 +46,7 @@ class EvaluacionesController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('profesor.foros.show');
     }
 
     /**
@@ -57,7 +57,7 @@ class EvaluacionesController extends Controller
      */
     public function edit($id)
     {
-        return view('profesor.evaluaciones.edit');
+        return view('profesor.foros.edit');
     }
 
     /**

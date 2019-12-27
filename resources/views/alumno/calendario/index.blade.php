@@ -25,14 +25,6 @@
                             <option value="6">6to Básico</option>
                         </select>
                     </div>
-                    <div class="col-4">
-                        <div class="d-flex justify-content-end">
-                            <a class="btn btn-info btn-sm" href="{{ route('admin.evaluacionesProfesor.create')}}">
-                                <i class="fa fa-plus"></i>
-                                Nueva Evaluacion
-                            </a>
-                        </div>
-                    </div>
                 </div>
                 <div class="table-responsive m-t-40">
                     <table id="usersTable" class="table table-bordered">
@@ -48,8 +40,8 @@
                                 <td>Prueba nº1</td>
                                 <td><span class="badge badge-primary">Activa</span></td>
                                 <td>
-                                     <a class="btn btn-secondary" href="{{ route('admin.evaluacionesProfesor.edit', 1)}}">
-                                        <i class="fa fa-pencil"></i>
+                                     <a class="btn btn-secondary" href="{{ route('admin.evaluacionesAlumnos.edit', 1)}}">
+                                        <i class="fa fa-pencil"></i> Rendir
                                     </a>
                                 </td>
                             </tr>
@@ -57,8 +49,8 @@
                                 <td>Prueba nº2</td>
                                 <td><span class="badge badge-secondary">Finalizada</span></td>
                                 <td>
-                                     <a class="btn btn-secondary">
-                                        <i class="fa fa-eye"></i>
+                                     <a class="btn btn-secondary" href="{{ route('admin.evaluacionesAlumnos.show', 1)}}">
+                                        <i class="fa fa-eye"></i> Ver
                                     </a>
                                 </td>
                             </tr>

@@ -9,29 +9,10 @@
                     <div class="col-4">
                         <select name="" id="" class="form-control">
                             <option value="0">Seleccionar Ramo</option>
-                            <option value="1">Historia</option>
+                            <option value="1" selected>Historia</option>
                             <option value="2">Ingles</option>
                             <option value="3">Matematica</option>
                         </select>
-                    </div>
-                    <div class="col-4">
-                        <select name="" id="" class="form-control">
-                            <option value="0">Seleccionar Nivel</option>
-                            <option value="1">1ro Básico</option>
-                            <option value="2">2do Básico</option>
-                            <option value="3">4ro Básico</option>
-                            <option value="4">4to Básico</option>
-                            <option value="5">5to Básico</option>
-                            <option value="6">6to Básico</option>
-                        </select>
-                    </div>
-                    <div class="col-4">
-                        <div class="d-flex justify-content-end">
-                            <a class="btn btn-info btn-sm" href="{{ route('admin.evaluacionesProfesor.create')}}">
-                                <i class="fa fa-plus"></i>
-                                Nueva Evaluacion
-                            </a>
-                        </div>
                     </div>
                 </div>
                 <div class="table-responsive m-t-40">
@@ -48,8 +29,8 @@
                                 <td>Prueba nº1</td>
                                 <td><span class="badge badge-primary">Activa</span></td>
                                 <td>
-                                     <a class="btn btn-secondary" href="{{ route('admin.evaluacionesProfesor.edit', 1)}}">
-                                        <i class="fa fa-pencil"></i>
+                                     <a class="btn btn-secondary" href="{{ route('admin.evaluacionesAlumnos.edit', 1)}}">
+                                        <i class="fa fa-pencil"></i> Rendir
                                     </a>
                                 </td>
                             </tr>
@@ -57,8 +38,8 @@
                                 <td>Prueba nº2</td>
                                 <td><span class="badge badge-secondary">Finalizada</span></td>
                                 <td>
-                                     <a class="btn btn-secondary">
-                                        <i class="fa fa-eye"></i>
+                                     <a class="btn btn-secondary" href="{{ route('admin.evaluacionesAlumnos.show', 1)}}">
+                                        <i class="fa fa-eye"></i> Ver
                                     </a>
                                 </td>
                             </tr>

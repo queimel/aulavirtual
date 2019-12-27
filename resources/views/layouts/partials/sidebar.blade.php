@@ -17,6 +17,9 @@
                         @hasrole('Profesor')
                             Profesor
                         @endhasrole
+                        @hasanyrole('Alumno 8vo|Alumno 1ro')
+                            Alumno
+                        @endhasanyrole
 
                         </span></a>
                             <!-- <ul aria-expanded="false" class="collapse">
@@ -63,20 +66,38 @@
                                 </li>
                             </ul>
                         </li>
-                        @endhasrole
-                        <!-- <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-engine"></i><span class="hide-menu">Mantenciones</span></a>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Foros </span></a>
                             <ul aria-expanded="false" class="collapse">
-                            <li><a href="app-calendar.html">Listado mantenciones</a></li>
-                                <li><a href="app-chat.html">Nueva mantencion</a></li>
+                                <li>
+                                    <a href="{{ route('admin.forosProfesor.index')}}">Listado Foros </a>
+                                </li>
                             </ul>
                         </li>
-                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="mdi mdi-wrench"></i><span class="hide-menu">Tecnicos</span></a>
-                            <ul aria-expanded="false" class="collapse">
-                            <li><a href="app-calendar.html">Listado Tecnicos</a></li>
-                                <li><a href="app-chat.html">Nueva Tecnico</a></li>
-                            </ul>
-                        </li> -->
+                        @endhasrole
 
+                        @hasanyrole('Alumno 8vo|Alumno 1ro')
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Mis Evaluaciones </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                    <a href="{{ route('admin.evaluacionesAlumnos.index')}}">Listado Evaluaciones </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Mi Horario </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                    <a href="{{ route('admin.calendarioAlumnos.index')}}">ver horario </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><span class="hide-menu">Mis notas </span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li>
+                                    <a href="{{ route('admin.calificacionesAlumnos.index')}}">ver notas </a>
+                                </li>
+                            </ul>
+                        </li>
+                        @endhasanyrole
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

@@ -28,5 +28,5 @@ mix.js('resources/js/app.js', 'public/js')
     ], 'public/js/plugins.js')
     .styles([
         'public/js/plugins/perfect-scrollbar/css/perfect-scrollbar.css',
-        'public/js/plugins/footable/css/footable.core.css',
+        'public/js/plugins/footable/css/footable.core.css'
     ], 'public/css/extra.css');

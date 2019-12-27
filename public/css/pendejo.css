@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
+.card-title{
+    font-family: 'Pacifico', cursive !important;
+    font-size: 26px !important
+}
+
+.card-no-border .left-sidebar, .card-no-border .sidebar-nav{
+    background: #745af2 !important;
+}
+
+.sidebar-nav ul li a{
+    color: white;
+    border-bottom: 1px dashed white;
+    font-family: 'Pacifico', cursive !important;
+    font-size: 20px;
+}
+
+.sidebar-nav .has-arrow::after{
+    border-color: white;
+}

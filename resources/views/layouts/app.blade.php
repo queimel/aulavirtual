@@ -17,6 +17,10 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/extra.css') }}" rel="stylesheet">
 
+    @hasrole('Alumno 1ro')
+    <link href="{{ asset('css/pendejo.css') }}" rel="stylesheet">
+    @endhasrole
+
     @stack('styles')
 </head>
 <body class="fix-header fix-sidebar card-no-border">

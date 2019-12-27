@@ -1,58 +1,47 @@
 @extends('layouts.app')
 @section('content')
 <div class="row">
-    <div class="col-4">
+    <div class="col-8">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Nueva Evaluación</h4>
+                <h4 class="card-title">Nuevo Foro</h4>
                 <hr>
                 <div class="form-group">
-                    <label for="formGroupExampleInput">Titulo Evaluación</label>
+                    <label for="formGroupExampleInput">Titulo Foro</label>
                     <input type="text" class="form-control" placeholder="" value="">
                 </div>
                 <div class="form-group">
                     <label for="">Instrucciones</label>
                     <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-8">
-        <div class="card">
-            <div class="card-body">
-                <div class="d-flex justify-content-between mb-3">
-                    <h5>Preguntas</h5>
-                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalNuevaPregunta">
-                        <i class="fa fa-plus" aria-hidden="true"></i> Agregar nueva pregunta
-                    </button>
-                </div>
-                <table id="demo-foo-addrow" class="table table-bordered table-hover ">
-                    <tr>
-                        <th><small>#</small></th>
-                        <th><small>Cuerpo pregunta</small></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>
-                            <small>
-                                ¿Proin sed dolor eget dolor cursus egestas. Nulla ultricies dui arcu, non placerat magna accumsan ut. Curabitur gravida ullamcorper velit ultrices sagittis?
-                            </small>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalEditarPregunta" >
-                                <i class="fa fa-pencil" aria-hidden="true"></i>
-                            </button>
-                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalBorrarPregunta">
-                                <i class="fa fa-trash" aria-hidden="true"></i>
-                            </button>
-                        </td>
-                    </tr>
 
-                </table>
+                <div class="form-group">
+                    <label class="control-label">Nivel</label>
+                    <select class="form-control custom-select">
+                        <option value="Category 1">Nivel 1</option>
+                        <option value="Category 2">Nivel 2</option>
+                        <option value="Category 3">Nivel 5</option>
+                        <option value="Category 4">Nivel 4</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Seccion</label>
+                    <select class="form-control custom-select">
+                        <option value="Category 1">Seccion 1</option>
+                        <option value="Category 2">Seccion 2</option>
+                        <option value="Category 3">Seccion 5</option>
+                        <option value="Category 4">Seccion 4</option>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn waves-effect waves-light btn-primary">Crear Foro</button>
+                </div>
             </div>
         </div>
     </div>
+
 </div>
 @endsection
 

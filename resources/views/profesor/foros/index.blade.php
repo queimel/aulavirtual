@@ -4,64 +4,48 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Evaluaciones</h4>
-                <div class="row">
-                    <div class="col-4">
-                        <select name="" id="" class="form-control">
-                            <option value="0">Seleccionar Ramo</option>
-                            <option value="1">Historia</option>
-                            <option value="2">Ingles</option>
-                            <option value="3">Matematica</option>
-                        </select>
+                <div class="d-flex mb-3 justify-content-between">
+                    <div>
+                        <h4 class="card-title">Foros</h4>
+                        <h6 class="card-subtitle">Listado de foros</h6>
                     </div>
-                    <div class="col-4">
-                        <select name="" id="" class="form-control">
-                            <option value="0">Seleccionar Nivel</option>
-                            <option value="1">1ro Básico</option>
-                            <option value="2">2do Básico</option>
-                            <option value="3">4ro Básico</option>
-                            <option value="4">4to Básico</option>
-                            <option value="5">5to Básico</option>
-                            <option value="6">6to Básico</option>
-                        </select>
-                    </div>
-                    <div class="col-4">
-                        <div class="d-flex justify-content-end">
-                            <a class="btn btn-info btn-sm" href="{{ route('admin.evaluacionesProfesor.create')}}">
-                                <i class="fa fa-plus"></i>
-                                Nueva Evaluacion
-                            </a>
-                        </div>
+                    <div>
+                        <a class="btn btn-info btn-sm" href="{{ route('admin.forosProfesor.create')}}">
+                            <i class="fa fa-plus"></i>
+                            Nuevo Foro
+                        </a>
                     </div>
                 </div>
+
+
                 <div class="table-responsive m-t-40">
                     <table id="usersTable" class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>Nombre</th>
-                                <th>Estado</th>
+                                <th>Titulo</th>
+                                <th>Ramo</th>
+                                <th>Nivel</th>
                                 <th>.</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Prueba nº1</td>
-                                <td><span class="badge badge-primary">Activa</span></td>
+                                <td>Nisi exercitation adipisicing aute occaecat sunt.</td>
+                                <td>Historia </td>
+                                <td><span class="badge badge-secondary">5to</span></td>
                                 <td>
-                                     <a class="btn btn-secondary" href="{{ route('admin.evaluacionesProfesor.edit', 1)}}">
-                                        <i class="fa fa-pencil"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Prueba nº2</td>
-                                <td><span class="badge badge-secondary">Finalizada</span></td>
-                                <td>
-                                     <a class="btn btn-secondary">
+                                     <a class="btn btn-secondary" href="{{ route('admin.forosProfesor.show', 1)}}">
                                         <i class="fa fa-eye"></i>
                                     </a>
+                                    <a class="btn btn-secondary" href="{{ route('admin.forosProfesor.edit', 1)}}">
+                                        <i class="fa fa-pencil"></i>
+                                    </a>
+                                    <button class="btn btn-danger" data-toggle="modal" data-target="#modalBorrarForo">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
                                 </td>
                             </tr>
+
                         </tbody>
                     </table>
                 </div>
@@ -72,71 +56,22 @@
 </div>
 @endsection
 
-<!-- MODALES UNIDAD -->
-<div class="modal fade bd-example-modal-lg" id="modalNuevaEvaluacion" tabindex="-1" role="dialog" aria-labelledby="modalNuevaEvaluacionTitle" aria-hidden="true">
+<!--borrar -->
+<div class="modal fade bd-example-modal-lg" id="modalBorrarForo" tabindex="-1" role="dialog" aria-labelledby="modalBorrarForoTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalNuevaEvaluacionTitle">Crear Nueva Evaluación</h5>
+          <h5 class="modal-title" id="modalBorrarForoTitle">Borrar Foro</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-            <div class="form-group">
-                <label for="formGroupExampleInput">Titulo Evaluación</label>
-                <input type="text" class="form-control" placeholder="" value="">
-            </div>
-            <div class="form-group">
-                <label for="">Instrucciones</label>
-                <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
-            </div>
-
-            <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle" data-page-size="7">
-                <thead>
-                    <tr>
-                        <th data-sort-initial="true" data-toggle="true">Nivel</th>
-                        <th>Profesor</th>
-                        <th></th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="form-group m-0">
-                                <input type="text" class="form-control form-control-sm" id="formGroupExampleInput" placeholder="" value="8vo basico">
-                            </div>
-                        </td>
-                        <td>
-                            <select name="" id="" class="form-control form-control-sm">
-                                <option value="">Seleccionar</option>
-                                <option value="0">Milca Fernandez</option>
-                                <option value="1" selected>Juan Pablo Torrealba</option>
-                                <option value="2">Jorge Saez</option>
-                            </select>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="tooltip" data-original-title="Delete"><i class="ti-close" aria-hidden="true"></i></button>
-                        </td>
-                    </tr>
-
-                </tbody>
-            </table>
-            <div class="m-t-10">
-                <div class="d-flex justify-content-end">
-                    <div class="form-group">
-                        <button id="demo-btn-addrow2" class="btn btn-primary btn-sm">
-                            <i class="icon wb-plus" aria-hidden="true"></i>Agregar nuevo nivel
-                        </button>
-                    </div>
-                </div>
-            </div>
-
+            ¿Esta seguro de querer eliminar este foro?
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Crear Unidad</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Borrar foro</button>
         </div>
       </div>
     </div>

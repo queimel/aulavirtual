@@ -4,15 +4,17 @@
     <div class="col-4">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Nueva Evaluación</h4>
+                <h4 class="card-title">Editar Evaluación</h4>
                 <hr>
                 <div class="form-group">
                     <label for="formGroupExampleInput">Titulo Evaluación</label>
-                    <input type="text" class="form-control" placeholder="" value="">
+                    <input type="text" class="form-control" placeholder="" value="Pellentesque sit amet consectetur tellus">
                 </div>
                 <div class="form-group">
                     <label for="">Instrucciones</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control">
+                        Curabitur nec iaculis orci, gravida sodales diam. Ut fermentum, turpis non convallis commodo, dui ex egestas velit, eget laoreet arcu mi sit amet diam. Fusce sollicitudin, purus ut viverra vehicula, purus eros lobortis lorem, vitae aliquet massa orci id leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna arcu, commodo nec sagittis vitae, fermentum a turpis. Nunc a quam lorem. Donec aliquam porta dignissim. Maecenas accumsan vel magna bibendum congue.
+                    </textarea>
                 </div>
             </div>
         </div>
@@ -34,6 +36,88 @@
                     </tr>
                     <tr>
                         <td>1</td>
+                        <td>
+                            <small>
+                                ¿Proin sed dolor eget dolor cursus egestas. Nulla ultricies dui arcu, non placerat magna accumsan ut. Curabitur gravida ullamcorper velit ultrices sagittis?
+                            </small>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalEditarPregunta" >
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalBorrarPregunta">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <small>
+                                ¿Proin sed dolor eget dolor cursus egestas. Nulla ultricies dui arcu, non placerat magna accumsan ut. Curabitur gravida ullamcorper velit ultrices sagittis?
+                            </small>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalEditarPregunta" >
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalBorrarPregunta">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <small>
+                                ¿Proin sed dolor eget dolor cursus egestas. Nulla ultricies dui arcu, non placerat magna accumsan ut. Curabitur gravida ullamcorper velit ultrices sagittis?
+                            </small>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalEditarPregunta" >
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalBorrarPregunta">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <small>
+                                ¿Proin sed dolor eget dolor cursus egestas. Nulla ultricies dui arcu, non placerat magna accumsan ut. Curabitur gravida ullamcorper velit ultrices sagittis?
+                            </small>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalEditarPregunta" >
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalBorrarPregunta">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <small>
+                                ¿Proin sed dolor eget dolor cursus egestas. Nulla ultricies dui arcu, non placerat magna accumsan ut. Curabitur gravida ullamcorper velit ultrices sagittis?
+                            </small>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalEditarPregunta" >
+                                <i class="fa fa-pencil" aria-hidden="true"></i>
+                            </button>
+                            <button type="button" class="btn btn-sm btn-icon btn-pure btn-outline delete-row-btn" data-toggle="modal" data-target="#modalBorrarPregunta">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
                         <td>
                             <small>
                                 ¿Proin sed dolor eget dolor cursus egestas. Nulla ultricies dui arcu, non placerat magna accumsan ut. Curabitur gravida ullamcorper velit ultrices sagittis?
