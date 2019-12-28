@@ -29,6 +29,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin','middleware' => ['auth
     Route::resource('evaluacionesProfesor', 'EvaluacionesController', ['as' => 'admin']);
     Route::resource('forosProfesor', 'ForosProfesor', ['as' => 'admin']);
     Route::resource('evaluacionesAlumnos', 'EvaluacionesAlumnos', ['as' => 'admin']);
-    Route::resource('calendarioAlumnos', 'CalendarioAlumnos', ['as' => 'admin']);
-    Route::resource('calificacionesAlumnos', 'CalificacionesAlumnos', ['as' => 'admin']);
+    Route::resource('calendarioAlumnos', 'calendarioAlumnos', ['as' => 'admin']);
+    Route::resource('calificacionesAlumnos', 'calificacionesAlumnos', ['as' => 'admin']);
 });
